@@ -73,14 +73,43 @@
 		
     	<p>As I migrated my personal website from dreamhost to Github Pages, I need to change my wordpress blog into something that can live on Github Pages. I chose Hexo as Phil recommended to me several times.</p>
 <p>It was a headache for me to set all things up, as neither I am a programmer nor I am familiar with github before. So here’s really handy post about how to set up a Hexo blog on your github pages as a project site.</p>
-<h4 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h4><p>As I already set the CNAME file for customizing the domain of my github pages, I don’t need to customize again for my project site if I want it to to be the subsite of it.</p>
-<h4 id="Blog-Setup-amp-Deploy"><a href="#Blog-Setup-amp-Deploy" class="headerlink" title="Blog Setup &amp; Deploy"></a>Blog Setup &amp; Deploy</h4><h6 id="REF"><a href="#REF" class="headerlink" title="REF"></a>REF</h6><ol>
+<h4 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h4><p>Github Pages supports two different sites: user site and project site. I already have my portfolio set as my user site (with url the same as my github.io directory). I set this blog as a project site.</p>
+<p>Here’s what I did:</p>
+<ol>
+<li>Create new Github repo</li>
+</ol>
+<ul>
+<li>Hexo setup &amp; deploy</li>
+<li>Custom domain</li>
+<li>Write posts</li>
+<li>Customize blog style</li>
+</ul>
+<h4 id="Create-new-Github-repo"><a href="#Create-new-Github-repo" class="headerlink" title="Create new Github repo"></a>Create new Github repo</h4><ol>
+<li>Create a new repository named ‘Blog’.</li>
+<li>Clone it to my local directory named ‘…/blog/‘.</li>
+</ol>
+<p>Remember Git and Github are different things! It’s crucial when using git and github. Here’s an article that can help.</p>
+<h4 id="Hexo-Setup"><a href="#Hexo-Setup" class="headerlink" title="Hexo Setup"></a>Hexo Setup</h4><p>Before installing Hexo, you need to install:</p>
+<ul>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a></li>
+<li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></li>
+</ul>
+<p>As I already had both of these, I can move straight down to <a href="https://hexo.io/docs/index.html" target="_blank" rel="external">Hexo installation with npm</a>.</p>
+<h4 id="Hexo-Deploy"><a href="#Hexo-Deploy" class="headerlink" title="Hexo Deploy"></a>Hexo Deploy</h4><p>After you setup the _config.yml file, your blog is mostly ready. You don’t have to Launch automatic page generator in your github setting. Hexo will automatically publish your site on <a href="http://username.github.io/blog" target="_blank" rel="external">http://username.github.io/blog</a>.</p>
+<p>When I build initiate Hexo in my local repo, it automatically turns it into a local git repository. </p>
+<h4 id="Custom-domain"><a href="#Custom-domain" class="headerlink" title="Custom domain"></a>Custom domain</h4><p>As I already set the CNAME file for customizing the domain of my github pages, I don’t need to customize again for my project site if I want it to to be the subsite of it.</p>
+<h4 id="Write-Posts"><a href="#Write-Posts" class="headerlink" title="Write Posts"></a>Write Posts</h4><p>You can use markdown language to write Hexo post. See <a href="http://daringfireball.net/projects/markdown/basics" target="_blank" rel="external">Markdown Reference</a></p>
+<h4 id="Customize-blog-style"><a href="#Customize-blog-style" class="headerlink" title="Customize blog style"></a>Customize blog style</h4><p>First, choose a theme that you like. Here’s a great resource made by Hexo: <a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">Hexo Themes</a>.</p>
+<ul>
+<li>Language</li>
+<li>Color</li>
+<li>Header/Footer</li>
+</ul>
+<h4 id="Recourses"><a href="#Recourses" class="headerlink" title="Recourses"></a>Recourses</h4><h4 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h4><ol>
 <li><a href="https://hexo.io/docs/" target="_blank" rel="external">Hexo Official Docs</a></li>
 <li><a href="https://gist.github.com/yt8yt/ff97d36f7a35948a8351" target="_blank" rel="external">How to use Hexo and deploy to Github Pages</a></li>
 <li><a href="http://yangjian.me/workspace/building-blog-with-hexo/" target="_blank" rel="external">Set up blog with Hexo</a></li>
 <li><a href="http://philguo.com/blog/2016/hexo-on-github-pages/" target="_blank" rel="external">Setting up Hexo on Github Pages</a></li>
-</ol>
-<h4 id="Blog-Edit"><a href="#Blog-Edit" class="headerlink" title="Blog Edit"></a>Blog Edit</h4><h6 id="REF-1"><a href="#REF-1" class="headerlink" title="REF"></a>REF</h6><ol>
 <li><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">Hexo Themes</a></li>
 <li><a href="http://daringfireball.net/projects/markdown/basics" target="_blank" rel="external">Markdown Reference</a></li>
 </ol>
