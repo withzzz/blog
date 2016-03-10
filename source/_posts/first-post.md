@@ -5,3 +5,5 @@ tags:
 ---
 
 Hello there!
+
+{% asset_img 1.png My image %}
