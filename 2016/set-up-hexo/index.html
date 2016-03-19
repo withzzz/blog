@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://zzhen.us/blog/2016/set-up-hexo/index.html">
 <meta property="og:site_name" content="Zhen's Blog">
 <meta property="og:description" content="As I migrated my personal website from dreamhost to Github Pages, I need to change my wordpress blog into something that can live on Github Pages. I chose Hexo as Phil recommended to me several times.">
-<meta property="og:updated_time" content="2016-03-19T03:03:18.000Z">
+<meta property="og:updated_time" content="2016-03-19T05:40:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Use Hexo and deploy to Github Pages">
 <meta name="twitter:description" content="As I migrated my personal website from dreamhost to Github Pages, I need to change my wordpress blog into something that can live on Github Pages. I chose Hexo as Phil recommended to me several times.">
@@ -99,7 +99,10 @@
 <p>The <code>#Deployment</code> part is where you set your blog to be deployed on your github repo. If you are deploying your blog as user site, you will set the branch as master. If it is a project site as mine, you will set the branch as gh-pages. Mine would be:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:withzzz/blog.git</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure></p>
 <h4 id="Hexo-Deploy"><a href="#Hexo-Deploy" class="headerlink" title="Hexo Deploy"></a>Hexo Deploy</h4><p>After you setup the <code>_config.yml</code> file, your blog is mostly ready. Now, try:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><br>You don’t have to Launch automatic page generator in your github setting. Hexo will automatically publish your site on <code>http://username.github.io/blog</code>.</p>
 <h4 id="Custom-domain"><a href="#Custom-domain" class="headerlink" title="Custom domain"></a>Custom domain</h4><p>As I already set the CNAME file for customizing the domain of my github pages, I don’t need to customize again for my project site if I want it to to be the subsite of it.</p>
-<h4 id="Write-Posts"><a href="#Write-Posts" class="headerlink" title="Write Posts"></a>Write Posts</h4><p>You can use markdown language to write Hexo post. See <a href="http://daringfireball.net/projects/markdown/basics" target="_blank" rel="external">Markdown Reference</a></p>
+<h4 id="Write-Posts"><a href="#Write-Posts" class="headerlink" title="Write Posts"></a>Write Posts</h4><p>In terminal, use this command to add post:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`$ hexo new title`</span><br></pre></td></tr></table></figure><br>Then you can see a md file named <code>title.md</code> in your <code>.../blog/source/_posts/</code>folder. This title is just the file name and it’s not gonna be the title of your article. And it will affect the url of this post later. So it’s better to name it with all undercase letter and <code>-</code>.</p>
+<p>You can use markdown language to write Hexo post. See <a href="http://daringfireball.net/projects/markdown/basics" target="_blank" rel="external">Markdown Reference</a> or press <code>⌘R</code> for reference in <a href="http://25.io/mou/" target="_blank" rel="external">Mou</a>.</p>
+<p>When finish writing, you need to use this command to post it on your blog:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure><br>What’s happening here is Hexo will generate the post in the <code>public</code> folder, then deploy it on your blog. It doesn’t matter if you change anything in the <code>public</code> folder. As long as the all your posts are under the <code>source</code> folder, they will be easily generated and deployed again on your blog.</p>
+<p>When you want to regenerate all the posts again, to clean up trash in the <code>public</code> folder, use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure></p>
 <h4 id="Customize-blog-style"><a href="#Customize-blog-style" class="headerlink" title="Customize blog style"></a>Customize blog style</h4><p>First, choose a theme that you like. Here’s a great resource made by Hexo: <a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">Hexo Themes</a>.</p>
 <ol>
 <li>Choose a theme.</li>
@@ -131,6 +134,20 @@
 	</footer>
 	
     
+<nav id="article-nav">
+  
+    <a href="/blog/2016/lowpoly-modeling-c4d/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Low Poly Modeling in C4D
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
 
