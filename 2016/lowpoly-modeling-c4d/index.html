@@ -5,33 +5,22 @@
   
   <title>Low Poly Modeling in C4D | Zhen&#39;s Blog</title>
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="There are some ways to model in a low poly style in C4D:
-
-Turn off phong
-Polygon Reduction
-Connect &amp;gt; Phong: Manually
-Displacer">
+  <meta name="description" content="Creating in low poly style is a fast and nice way to produce high-quality 3D work. 
+ToolI used Maya in my undergrad. Comparing to Maya, C4D is very good and handy for motion graphics. I admit that May">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Low Poly Modeling in C4D">
 <meta property="og:url" content="http://zzhen.us/blog/2016/lowpoly-modeling-c4d/index.html">
 <meta property="og:site_name" content="Zhen's Blog">
-<meta property="og:description" content="There are some ways to model in a low poly style in C4D:
-
-Turn off phong
-Polygon Reduction
-Connect &amp;gt; Phong: Manually
-Displacer">
+<meta property="og:description" content="Creating in low poly style is a fast and nice way to produce high-quality 3D work. 
+ToolI used Maya in my undergrad. Comparing to Maya, C4D is very good and handy for motion graphics. I admit that May">
 <meta property="og:image" content="http://zzhen.us/blog/blog/2016/lowpoly-modeling-c4d/island1.jpg">
-<meta property="og:image" content="http://zzhen.us/blog/blog/2016/lowpoly-modeling-c4d/island2.png">
-<meta property="og:updated_time" content="2016-03-20T07:16:17.000Z">
+<meta property="og:image" content="http://zzhen.us/blog/blog/2016/lowpoly-modeling-c4d/lighthouse1.png">
+<meta property="og:image" content="http://zzhen.us/blog/blog/2016/lowpoly-modeling-c4d/lighthouse2.png">
+<meta property="og:updated_time" content="2016-03-21T16:30:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Low Poly Modeling in C4D">
-<meta name="twitter:description" content="There are some ways to model in a low poly style in C4D:
-
-Turn off phong
-Polygon Reduction
-Connect &amp;gt; Phong: Manually
-Displacer">
+<meta name="twitter:description" content="Creating in low poly style is a fast and nice way to produce high-quality 3D work. 
+ToolI used Maya in my undergrad. Comparing to Maya, C4D is very good and handy for motion graphics. I admit that May">
 <meta name="twitter:image" content="http://zzhen.us/blog/blog/2016/lowpoly-modeling-c4d/island1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Zhen&#39;s Blog" type="application/atom+xml">
@@ -88,15 +77,20 @@ Displacer">
 	</header>
 	<div class="entry-content">
 		
-    	<p>There are some ways to model in a low poly style in C4D:</p>
-<ul>
-<li>Turn off phong</li>
+    	<p>Creating in low poly style is a fast and nice way to produce high-quality 3D work. </p>
+<h5 id="Tool"><a href="#Tool" class="headerlink" title="Tool"></a>Tool</h5><p>I used Maya in my undergrad. Comparing to Maya, C4D is very good and handy for motion graphics. I admit that Maya is really powerful in modeling and rigging animation. But when it comes to motion graphics, C4D is much faster for you to achieve the effect you want. As I am not doing professional 3D animation or game production, C4D is enough for me.</p>
+<h5 id="Common-Techniques-in-C4D"><a href="#Common-Techniques-in-C4D" class="headerlink" title="Common Techniques in C4D"></a>Common Techniques in C4D</h5><ul>
+<li>Throw away the Phong tag</li>
 <li>Polygon Reduction</li>
 <li>Connect &gt; Phong: Manually</li>
 <li>Displacer</li>
+<li>If you are modeling with a sphere, remember to uncheck the “perfect geometry” box. Otherwise it will still render perfectly even without the phong tag.</li>
 </ul>
-<img src="/blog/2016/lowpoly-modeling-c4d/island1.jpg" alt="island" title="island">
-<img src="/blog/2016/lowpoly-modeling-c4d/island2.png" alt="lighthouse" title="lighthouse">
+<h5 id="Practice-Work"><a href="#Practice-Work" class="headerlink" title="Practice Work"></a>Practice Work</h5><p>My first try following Mt. Mograph’s tut is just OK. The model is enough to use but the lighting is really bad. Missing many details in models, low poly style really depends on the contrast between faces. A good environment specular light would really help a lot.<br><img src="/blog/2016/lowpoly-modeling-c4d/island1.jpg" alt="island" title="island"></p>
+<p>So here I used GSG light kit as my environment light. It looks much better with clear edges and different reflectance on different faces.<br><img src="/blog/2016/lowpoly-modeling-c4d/lighthouse1.png" alt="lighthouse" title="lighthouse"></p>
+<p>However, I wanted to make the water material more reflectant. Then it reflected every light in the scene that there’re many big white dot in the water. So I have to make every light not specular. But it also weakens the details of other objects. The scene looks dim.<br><img src="/blog/2016/lowpoly-modeling-c4d/lighthouse2.png" alt="lighthouse" title="lighthouse"></p>
+<p>I think I need to figure out other way to make blink blink water. </p>
+<h5 id="Resource"><a href="#Resource" class="headerlink" title="Resource"></a>Resource</h5><p><a href="https://www.youtube.com/user/mtmograph" target="_blank" rel="external">Mt. Mograph</a><br>GSG<br>Lynda</p>
 
     
 	</div>
