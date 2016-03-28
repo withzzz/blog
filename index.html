@@ -71,7 +71,15 @@
 	</header>
 	<div class="entry-content">
 		
-    	<img src="/blog/2016/tulip/tulip1.png" alt="tulip" title="tulip">
+    	<p>After watching all the rose/lily-modeling tutorials on youtube, modeling my own tulip becomes much easier. I like the little detail of the petal shape and the stamen:<br><img src="/blog/2016/tulip/tulip1.png" alt="tulip" title="tulip"></p>
+<p>I told Phil I don’t like the lighting effect and we decided to adjust the material and render settings. </p>
+<p>Delete omni light and add an area light:<br><img src="/blog/2016/tulip/tulip_arealight.png" alt="tulip" title="tulip"></p>
+<p>Add Ambient Occlusion in my render setting. I don’t really like it:<br><img src="/blog/2016/tulip/tulip_ao.png" alt="tulip" title="tulip"></p>
+<p>Add Global Illumination in my render setting, the shadow becomes much softer. The petal’s material is a little bit transclucent, there are light coming through the petals that we can tell the transclucent. It’s much better:<br><img src="/blog/2016/tulip/tulip_gi.png" alt="tulip" title="tulip"></p>
+<p>Add subsurface scattering as texture of luminance in material. It gives the flower a more wax-like look. But the color becomes too white:<br><img src="/blog/2016/tulip/tulip_ss.png" alt="tulip" title="tulip"></p>
+<p>Delete the color and just use luminance to colorize the petal. It’s too dark now:<br><img src="/blog/2016/tulip/tulip_ss2.png" alt="tulip" title="tulip"></p>
+<p>Add a little bit color with the luminance. And render it with global illumination. So far this is my favorite:<br><img src="/blog/2016/tulip/tulip_ss_gi.png" alt="tulip" title="tulip"></p>
+<p>Add a water texture of bump in material. It adds some petal vein. I’m not a fan to realistic style so this doesn’t pleasant me that much:<br><img src="/blog/2016/tulip/tulip_bump.png" alt="tulip" title="tulip"></p>
 
     
 	</div>
